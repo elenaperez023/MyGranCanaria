@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: url(../img/cumbre-canaria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/* .head{
+    padding: 0;
+    height: 150px;
+    width: 600px;
+    position: relative;
+    /* z-index: 9999; */
+   /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-size: cover;
+    /* position: fixed; */
+/*} */
+
+.head{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+/* .title{
+    position: absolute;
+    top: 100px;
+    left: 30%; 
+    text-align: center;
+    color: black;
+} */
+
+.title{
+    padding: 5px;
+    font-weight: 800;
+    color: black;
+    font-size: 120px;
+    background-color: #ffffff94;
+    background-position: center center;
+    background-size: 200%;
+    position: relative;
+    text-align: center;
+    line-height: 90px;
+    letter-spacing: -3px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+/* .copy{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: black;
+} */
+
+.copy{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+    background-color: #ffffff94;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+/* #menu-button{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    text-align: center;
+    padding-top: 5px;
+} */
+
+#close-button{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-navigation{
+    position: fixed;
+    width: 220vh;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+/* .side-menu-hidden{
+    transition: all 1s;
+    transform: translateX(-90vw);
+}
+
+.side-menu-visible{
+    left: 0;
+} */
+
+.menu-navigation a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.title{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* Introduction */
+
+.subtitle{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    font-family: 40px;
+}
+
+.intro-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-container img{
+    width: 40%;
+}
+
+.checklist-intro{
+    width: 45%;
+}
+
+.introduction{
+    margin-bottom: 20px;
+}
+
+.n-introduction{
+    margin-bottom: 7px;
+    color: black;
+}
+
+/* Gallery */
+
+h2{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    font-family: 40px;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-gallery{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.img-light{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.add-img{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+#side-menu-icon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Visit */
+
+.visits{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.visit-container{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.visit-container img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.n-visit{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* footer*/
+
+footer{
+    background-image: url(../img/footer.jpg);
+    padding-bottom: 0.1px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.footer-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: white;
+}
+
+.brand{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.brand+p{
+    font-weight: 500;
+    text-align: center;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: white;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+/* 
+
+
+#gran-canaria-title{
+    color:rgb(235, 228, 221);
+    text-align:center;
+    margin-left: -0.75em;
+    margin-top: -0.75em;
+}
+
+#header {
+    width: 100vw;
+    background-color: rgb(133, 84, 20);
+    height: 56px;
+    position: fixed;
+
+}
+
+#header i{
+    margin-top: 1em;
+    margin-left: 1em;
+    color: rgb(226, 234, 241);
+}
+
+#side-menu{
+    z-index: 100;
+    background-color: rgb(173, 106, 23);
+    width: 90vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.side-menu-hidden{
+    transition: all 1s;
+    transform: translateX(-90vw);
+}
+
+.side-menu-visible{
+    left: 0;
+}
+
+#side-menu i{
+    margin-top: 1em;
+    margin-left: 1em;
+    color: rgb(224, 228, 231);
+}
+
+.parent{
+    display: flex;
+    height: 300px;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.image-container{
+    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: space space-around;
+    width: 140px;
+    height: 140px;
+}
+
+.image-container{
+    width: 50vw;
+    height: 75vw;
+    display: inline-block;
+    margin:5px;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+*/
+
+/*responsive*/
+
+@media only screen and (max-width:800px){
+    .menu-navigation{
+        width:100vw ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .intro-container img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-intro{
+        width: 80%;
+    }
+
+    .introduction{
+        margin-bottom: 30px;
+    }
+
+    .add-img{
+        width: 80%;
+    }
+    
+    .img-gallery{
+        width: 45%;
+    }
+
+    .visit-container{
+        width: 80%;
+    }
+
+    .footer-content-container{
+        width: 80%;
+        justify-content: center;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .menu-navigation{
+        width:100vw ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #header-menu-icon{
+        top:20px;
+        right: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .intro-container img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-intro{
+        width: 80%;
+    }
+
+    .introduction{
+        margin-bottom: 30px;
+    }
+
+    .add-img{
+        width: 95%;
+    }
+    
+    .img-gallery{
+        width: 95%;
+    }
+
+    .visit-container{
+        width: 80%;
+    }
+
+    .footer-content-container{
+        width: 80%;
+        justify-content: center;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .menu-navigation{
+        width:100vw ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #header-menu-icon{
+        top:20px;
+        right: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .intro-container img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-intro{
+        width: 80%;
+    }
+
+    .introduction{
+        margin-bottom: 30px;
+    }
+
+    .add-img{
+        width: 95%;
+    }
+    
+    .img-gallery{
+        width: 95%;
+    }
+
+    .visit-container{
+        width: 80%;
+    }
+
+    .footer-content-container{
+        width: 80%;
+        justify-content: center;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
