@@ -1,29 +1,29 @@
-const images=document.querySelectorAll('.img-gallery')
-const imagesLight=document.querySelector('.add-img')
-const containerLight=document.querySelector('.img-light')
-const menuButton1=document.querySelector('.close-button')
+const IMAGES=document.querySelectorAll('.img-gallery')
+const IMAGES_LIGHT=document.querySelector('.add-img')
+const CONTAINER_LIGHT=document.querySelector('.img-light')
+const MCLOSE_BUTTON=document.querySelector('.close-button')
 
-// console.log(images)
-// console.log(imagesLight)
-// console.log(containerLight)
+// console.log(IMAGES)
+// console.log(IMAGES_LIGHT)
+// console.log(CONTAINER_LIGHT)
 
-images.forEach(image =>{
+IMAGES.forEach(image =>{
     image.addEventListener('click', ()=>{
         imageAppear(image.getAttribute('src'))
     })
 })
 
-containerLight.addEventListener('click', (e)=>{
-    if(e.target !== imagesLight){
-        containerLight.classList.toggle('show')
-        imagesLight.classList.toggle('showImage')
-        menuButton1.computedStyleMap.opacity='1'
+CONTAINER_LIGHT.addEventListener('click', (e)=>{
+    if(e.target !== IMAGES_LIGHT){
+        CONTAINER_LIGHT.classList.toggle('show')
+        IMAGES_LIGHT.classList.toggle('showImage')
+        MCLOSE_BUTTON.computedStyleMap.opacity='1'
     }
 })
 
 const imageAppear= (image)=>{
-    imagesLight.src=image;
-    containerLight.classList.toggle('show')
-    imagesLight.classList.toggle('showImage')
-    menuButton1.computedStyleMap.opacity='0'
+    IMAGES_LIGHT.src=image;
+    CONTAINER_LIGHT.classList.toggle('show')
+    IMAGES_LIGHT.classList.toggle('showImage')
+    MCLOSE_BUTTON.computedStyleMap.opacity='0'
 }
