@@ -1,0 +1,49 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    
+}
+
+/* .collapse.navbar-collapse{
+    justify-content: center;
+    display: flex;
+} */
+
+.nav-link a{
+    color: aliceblue;
+}
+
+
+
+#my-jumbotron {
+    margin-top: 5em;
+}
+
+#form-news {
+    margin-top: 5em;
+}
+
+#error-name-required {
+    display: none;
+    color: red;
+}
+
+#error-email-required {
+    display: none;
+    color: red;
+}
+
+#error-password-required {
+    display: none;
+    color: red;
+}
+
+#error-password-confirm-required {
+    display: none;
+    color: red;
+}
+
+#error-password-match-required {
+    display: none;
+    color: red;
+}
