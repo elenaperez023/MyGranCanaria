@@ -55,54 +55,6 @@ function validateFormNews(event){
     } else {
         document.getElementById("error-password-match-required").style.display = "none";
     }
-    
-    let comments = [
-        {
-            comment: "BH"
-        },
-        {
-            comment: "Orbea"
-        },
-        {
-            comment: "Decathlon"
-        },
-        {
-            comment: "Other"
-        }
-    ];
-    
-    function initialize() {
-        const COMMENT_FORM = document.getElementById("form-news");
-        COMMENT_FORM.addEventListener("submit", addComment);
-    
-        showComments();
-    }
-    
-    function addComment(event) {
-        event.preventDefault();
-    
-        const COMMENT = event.target.comment.value;
-    
-        comments.push({
-            comment: COMMENT,
-        });
-    
-        showComments();
-    }
-    
-    function showComments() {
-        const COMMENT_LIST = document.getElementById("comment-list");
-        COMMENT_LIST.innerHTML = "";
-    
-        for (let i = 0; i < comments.length; i++) {
-            COMMENT_LIST.innerHTML += `<li>${comments[i].brand} - <button onclick="deleteComment(${i})">DELETE</button></li>`;
-        }
-    }
-    
-    function deleteComment(commentId) {
-        comments.splice(commentId, 1);
-        showComments();
-    }
-    
+
     initialize();
 }
