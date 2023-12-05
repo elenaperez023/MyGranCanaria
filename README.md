@@ -16,10 +16,10 @@ The reference I am following: (https://www.grancanaria.com/turismo/)
 
 
 ## Acknowledgments
- - Unsplash.
- - W3schools.
- - Youtube.
- - Frontawesome
+ - Unsplash (https://unsplash.com/es)
+ - W3schools (https://www.w3schools.com/)
+ - Youtube (https://www.youtube.com/)
+ - Frontawesome (https://fontawesome.com/)
  - Classmates
- - Pixabay
- - Google fonts
+ - Pixabay (https://pixabay.com/es/images/search/gran%20canaria/)
+ - Google fonts (https://fonts.google.com/)
