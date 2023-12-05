@@ -38,50 +38,56 @@
     </div>
   </header>
 
-  <div class="container">
-    <form action="news.html" method="GET" id="form-news">
-      <h2>Entérate de las noticias actuales</h2>
-      <div class="form-group">
-        <label for="username">Nombre: </label>
-        <input type="text" id="username" name="username" class="form-control" />
-        <span id="error-name-required">* error: Nombre obligatorio</span>
+  
+    <div class="container">
+      <form action="news.html" method="GET" id="form-news">
+        <h2>Entérate de las noticias actuales</h2>
+        <div class="form-group">
+          <label for="username">Nombre: </label>
+          <input type="text" id="username" name="username" class="form-control" />
+          <span id="error-name-required">* error: Nombre obligatorio</span>
 
-        <label for="email">Correo electrónico: </label>
-        <input type="text" id="email" name="email" class="form-control" />
-        <span id="error-email-required">* error: Correo electrónico obligatorio</span>
+          <label for="email">Correo electrónico: </label>
+          <input type="text" id="email" name="email" class="form-control" />
+          <span id="error-email-required">* error: Correo electrónico obligatorio</span>
 
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" name="password" class="form-control" />
-        <span id="error-password-required">* error: Contraseña obligatoria</span>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" class="form-control" />
+          <span id="error-password-required">* error: Contraseña obligatoria</span>
 
-        <label for="password-confirm">Confirmar contraseña</label>
-        <input type="password" id="password-confirm" name="password-confirm" class="form-control" />
-        <span id="error-password-confirm-required">* error: Confirmación de la contraseña obligatorio</span>
-        <span id="error-password-match-required">* error: Las contraseñas deben coincidir</span>
-      </div>
+          <label for="password-confirm">Confirmar contraseña</label>
+          <input type="password" id="password-confirm" name="password-confirm" class="form-control" />
+          <span id="error-password-confirm-required">* error: Confirmación de la contraseña obligatorio</span>
+          <span id="error-password-match-required">* error: Las contraseñas deben coincidir</span>
+        </div>
 
-      <button type="submit" class="button">Enviar</button>
-    </form>
-  </div>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </div>
 
-  <form action="form.html" id="news-form" class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="right-side">
-          <h2>Sugerencias:</h2>
-          <h5>¿De qué te gustaría saber más?</h5>
-          <input type="text" id="new-new" required>
-          <ul id="new-list">
-            <li>Economía</li>
-            <li>Naturaleza</li>
-            <li>Gastronomía</li>
-          </ul>
-          <button type="submit" class="button">Añadir sugerencia</button>
+    <form action="form.html" id="news-form" class="container" name="guess-name">
+      <div class="row" id="data" >
+        <div class="col-sm-12">
+          <div class="right-side">
+            <h2>Sugerencias:</h2>
+            <h5>¿De qué te gustaría saber más?</h5>
+            <input type="text" id="new-new" required>
+            <ul id="new-list">
+              <li>Economía</li>
+              <li>Naturaleza</li>
+              <li>Gastronomía</li>
+            </ul>
+            <button type="submit" class="button">Añadir sugerencia</button>
+          </div>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+  
 
+  <button onclick="getDataFromLocalStorage()">Obtener datos</button>
+
+  <script src="js/show-local-storage-data.js"></script>
+  <script src="js/number.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/form.js"></script>
   <script src="js/news-list.js"></script>
