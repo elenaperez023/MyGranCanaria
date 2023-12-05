@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Gran Canaria</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!--Text fonts-->
@@ -18,59 +19,28 @@
 </head>
 
 <body>
-  <!-- <header class="header">
-    <nav class="navbar navbar-expand-sm navbar-dark ">
-      <div class="container-fluid justify-content-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="my-nav-bar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#introduction">Gran Canaria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#gallery">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#visit">¿Qúe visitar?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="path.html">Senderos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">Noticias</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header> -->
-
   <header>
     <div id="header">
-        <div class="header" id="home">
-            <nav class="menu-navigation">
-                <a href="index.html"> Inicio</a>
-                <a href="index.html#introduction">Gran Canaria</a>
-                <a href="index.html#gallery">Galería</a>
-                <a href="index.html#visit">¿Qué visitar?</a>
-                <a href="path.html">Senderos</a>
-                <a href="form.html">Noticias</a>
-            </nav>
-            <div class="head">
-                <h1 class="title" id="gran-canaria-title">My Gran Canaria</h1>
-                <p class="copy">Un destino único en el mundo</p>
-            </div>
+      <div class="header" id="home">
+        <nav class="menu-navigation">
+          <a href="index.html"> Inicio</a>
+          <a href="index.html#introduction">Gran Canaria</a>
+          <a href="index.html#gallery">Galería</a>
+          <a href="index.html#visit">¿Qué visitar?</a>
+          <a href="path.html">Senderos</a>
+          <a href="form.html">Noticias</a>
+        </nav>
+        <div class="head">
+          <h1 class="title" id="gran-canaria-title">My Gran Canaria</h1>
+          <p class="copy">Un destino único en el mundo</p>
         </div>
+      </div>
     </div>
-</header>
+  </header>
 
   <div class="container">
     <form action="news.html" method="GET" id="form-news">
+      <h2>Entérate de las noticias actuales</h2>
       <div class="form-group">
         <label for="username">Nombre: </label>
         <input type="text" id="username" name="username" class="form-control" />
@@ -92,26 +62,25 @@
 
       <button type="submit" class="button">Enviar</button>
     </form>
+  </div>
 
-    <form action="form.html" id="news-form">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="right-side">
-            <h2>Sugerencias:</h2>
-            <input type="text" id="new-new" required>
-            <ul id="new-list">
-              <li>Economía</li>
-              <li>Naturaleza</li>
-              <li>Gastronomía</li>
-            </ul>
-            <button type="submit" class="button">Agregar Sendero</button>
-          </div>
+  <form action="form.html" id="news-form" class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="right-side">
+          <h2>Sugerencias:</h2>
+          <h5>¿De qué te gustaría saber más?</h5>
+          <input type="text" id="new-new" required>
+          <ul id="new-list">
+            <li>Economía</li>
+            <li>Naturaleza</li>
+            <li>Gastronomía</li>
+          </ul>
+          <button type="submit" class="button">Añadir sugerencia</button>
         </div>
       </div>
-    </form>
-
-
-  </div>
+    </div>
+  </form>
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/form.js"></script>
